@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vekst – KI-Partnerschaft für Ihren Betrieb</title>
+<meta name="description" content="Vekst zeigt kleinen und mittleren Betrieben, wie KI Routineaufgaben übernimmt – live vor Ort, konkret, ohne Fachjargon. Angebote, Bewertungen, Social Media, Doku: in Sekunden statt Stunden.">
+<meta name="keywords" content="KI Beratung, KI für Handwerk, KI Hausverwaltung, ChatGPT für Betriebe, KI München, Vekst">
+<meta name="author" content="Vekst – John Thyssen & Samuel Dombrowski">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vekst – KI-Partnerschaft für Ihren Betrieb">
+<meta property="og:description" content="KI übernimmt Ihre Routineaufgaben. Angebote in 30 Sekunden, Google-Bewertungen in 2 Minuten, Social Media ohne Agentur. Live eingerichtet, nicht präsentiert.">
+<meta property="og:url" content="https://get-vekst.de">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Vekst">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vekst – KI-Partnerschaft für Ihren Betrieb">
+<meta name="twitter:description" content="KI übernimmt Ihre Routineaufgaben. Live eingerichtet, nicht präsentiert. Für Handwerk, Hausverwaltung & lokale Dienstleister.">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://get-vekst.de">
+
+<!-- Fonts loaded locally — no connection to Google servers -->
+<style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/inter-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('./fonts/inter-latin-500-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('./fonts/inter-latin-600-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/inter-latin-700-normal.woff2') format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/fraunces-latin-700-normal.woff2') format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:700;font-display:swap;src:url('./fonts/fraunces-latin-700-italic.woff2') format('woff2')}
+</style>
+
+<!-- Theme color for browser chrome -->
+<meta name="theme-color" content="#1a3c2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vekst",
+  "description": "KI-Partnerschaft für kleine und mittlere Betriebe. Live vor Ort eingerichtet, nicht präsentiert.",
+  "url": "https://get-vekst.de",
+  "telephone": "+4915120271857",
+  "email": "info@get-vekst.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Metzstraße 14",
+    "addressLocality": "München",
+    "postalCode": "81667",
+    "addressCountry": "DE"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "München"
+  },
+  "founder": [
+    {"@type": "Person", "name": "John Thyssen"},
+    {"@type": "Person", "name": "Samuel Dombrowski"}
+  ],
+  "knowsAbout": ["Künstliche Intelligenz", "KI-Beratung", "Digitalisierung", "Handwerk"],
+  "priceRange": "€€",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Einstieg",
+      "price": "149",
+      "priceCurrency": "EUR",
+      "description": "1,5-stündiger Workshop vor Ort, bis zu 2 Anwendungsfälle"
+    },
+    {
+      "@type": "Offer",
+      "name": "Partnerschaft",
+      "price": "249",
+      "priceCurrency": "EUR",
+      "description": "3-stündiger Workshop vor Ort, bis zu 4 Anwendungsfälle, 2 Wochen Begleitung"
+    }
+  ]
+}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0c0c0a;--ink-mid:#2a2a27;--ink-muted:#5a5a56;--ink-faint:#9a9a96;
+  --surface:#fff;--off:#f7f6f2;--border:#e8e6df;--border-mid:#ccc9bf;
+  --pine:#1a3c2e;--pine-2:#245c42;--pine-light:#ddeee6;--pine-faint:#eef6f1;
+  --gold:#b8892e;
+  --font-d:'Fraunces',Georgia,serif;--font-b:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);color:var(--ink);background:var(--surface);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;padding:0 max(env(safe-area-inset-left,0px),3rem);display:flex;align-items:center;justify-content:space-between;transition:background .3s,box-shadow .3s}
+nav.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
+.logo{font-family:var(--font-d);font-size:2.4rem;color:var(--pine);text-decoration:none;display:flex;align-items:center;gap:5px;letter-spacing:-.02em;cursor:pointer}
+.logo-dot{width:7px;height:7px;background:var(--gold);border-radius:50%}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--ink-muted);font-size:.875rem;font-weight:500;transition:color .2s;cursor:pointer}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.nav-cta{background:var(--pine)!important;color:#fff!important;padding:.5rem 1.2rem;border-radius:8px;font-weight:600;font-size:.85rem;transition:background .2s,transform .2s!important}
+.nav-cta:hover{background:var(--pine-2)!important;transform:translateY(-1px)!important}
+
+/* ── HAMBURGER ── */
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;z-index:400;position:relative}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s var(--ease),opacity .2s}
+.hamburger span+span{margin-top:6px}
+.hamburger.open span:first-child{transform:rotate(45deg) translate(4px,4px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:last-child{transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:1rem 1.75rem 1.5rem;z-index:299;transform:translateY(-10px);opacity:0;transition:transform .3s var(--ease),opacity .25s;pointer-events:none;box-shadow:0 8px 32px rgba(0,0,0,.06)}
+.mobile-menu.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.mobile-menu a{display:block;padding:.85rem 0;font-size:1rem;font-weight:500;color:var(--ink-mid);text-decoration:none;border-bottom:1px solid var(--border);cursor:pointer;transition:color .2s}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover,.mobile-menu a:active{color:var(--pine)}
+.mobile-menu .mm-cta{display:inline-block;margin-top:.75rem;background:var(--pine);color:#fff;padding:.7rem 1.4rem;border-radius:8px;font-weight:600;font-size:.9rem;text-align:center;width:100%;transition:background .2s}
+.mobile-menu .mm-cta:hover{background:var(--pine-2)}
+
+/* ── PAGES ── */
+.page{display:none;min-height:100vh}
+.page.active{display:block}
+
+/* ── SHARED ── */
+.sec{padding:6rem 3rem}
+.sec-warm{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.wrap{max-width:1060px;margin:0 auto}
+.wrap-sm{max-width:760px;margin:0 auto}
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pine-2);margin-bottom:.85rem}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--gold);border-radius:2px;flex-shrink:0}
+h2.ttl{font-family:var(--font-d);font-size:clamp(1.9rem,3vw,2.8rem);line-height:1.1;letter-spacing:-.025em;color:var(--ink);margin-bottom:1rem}
+.sub{color:var(--ink-muted);font-size:1rem;max-width:480px;line-height:1.8;margin-bottom:3.5rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.7rem;border-radius:8px;font-weight:600;font-size:.93rem;text-decoration:none;transition:all .25s var(--ease);cursor:pointer;border:none;font-family:var(--font-b)}
+.btn-pine{background:var(--pine);color:#fff;box-shadow:0 2px 14px rgba(26,60,46,.18)}
+.btn-pine:hover{background:var(--pine-2);transform:translateY(-2px);box-shadow:0 6px 24px rgba(26,60,46,.22)}
+.btn-line{color:var(--ink-mid);border:1.5px solid var(--border-mid);background:transparent}
+.btn-line:hover{border-color:var(--pine);color:var(--pine);transform:translateY(-1px)}
+.btn-white{background:#fff;color:var(--pine)}
+.btn-white:hover{background:var(--off);transform:translateY(-2px)}
+.btn-wline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.btn-wline:hover{border-color:rgba(255,255,255,.7);transform:translateY(-1px)}
+
+/* ── PAGE HERO (subpages) ── */
+.page-hero{padding:9rem 3rem 5.5rem;background:var(--off);border-bottom:1px solid var(--border);text-align:center}
+.page-hero h1{font-family:var(--font-d);font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.08;letter-spacing:-.03em;color:var(--ink);max-width:680px;margin:0 auto 1.25rem}
+.page-hero h1 em{font-style:italic;color:var(--pine)}
+.page-hero p{font-size:1.05rem;color:var(--ink-muted);max-width:500px;margin:0 auto;line-height:1.8}
+
+/* ── HOME HERO ── */
+.hero{min-height:100vh;padding:0 3rem;display:flex;flex-direction:column;justify-content:center;background:var(--off);position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 700px 500px at 75% 50%,rgba(27,61,47,.05) 0%,transparent 70%),radial-gradient(ellipse 400px 300px at 20% 80%,rgba(184,137,46,.04) 0%,transparent 60%)}
+.hero-inner{max-width:1140px;margin:0 auto;width:100%;padding-top:68px;display:grid;grid-template-columns:1fr 440px;gap:5rem;align-items:center}
+.hero-label{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pine-2);margin-bottom:1.75rem;opacity:0;transform:translateY(12px);animation:fadeUp .7s var(--ease) .1s forwards}
+.hero-label-line{width:22px;height:2px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.hero h1{font-family:var(--font-d);font-size:clamp(2.8rem,5vw,4.2rem);line-height:1.06;letter-spacing:-.03em;color:var(--ink);margin-bottom:1.5rem;opacity:0;transform:translateY(16px);animation:fadeUp .8s var(--ease) .25s forwards}
+.hero h1 em{font-style:italic;color:var(--pine)}
+.hero-sub{font-size:1.05rem;color:var(--ink-muted);line-height:1.8;max-width:490px;margin-bottom:2.75rem;opacity:0;transform:translateY(12px);animation:fadeUp .7s var(--ease) .4s forwards}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;transform:translateY(12px);animation:fadeUp .7s var(--ease) .55s forwards}
+.hero-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.07);opacity:0;transform:translateX(24px);animation:fadeLeft .9s var(--ease) .5s forwards}
+.hc-top{background:var(--pine);padding:1.2rem 1.5rem;display:flex;align-items:center;gap:.5rem}
+.hc-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.2)}
+.hc-title{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-left:auto}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.stat{background:var(--surface);padding:1.35rem 1.2rem;transition:background .2s}
+.stat:hover{background:var(--pine-faint)}
+.stat-n{font-family:var(--font-d);font-size:2rem;color:var(--pine);line-height:1;margin-bottom:.25rem;letter-spacing:-.02em}
+.stat-l{font-size:.77rem;color:var(--ink-muted);line-height:1.4}
+.hc-quote{padding:1.2rem 1.5rem;border-top:1px solid var(--border);display:flex;gap:.7rem}
+.hc-qbar{width:3px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.hc-qt{font-size:.82rem;color:var(--ink-muted);font-style:italic;line-height:1.65}
+.scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:0;animation:fadeUp .6s var(--ease) 1.2s forwards}
+.scroll-hint span{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+.scroll-arr{width:22px;height:22px;border-right:2px solid var(--border-mid);border-bottom:2px solid var(--border-mid);transform:rotate(45deg);animation:bounce 2s ease infinite}
+
+/* ── BAND ── */
+.band{background:var(--pine);padding:1.1rem 3rem;display:flex;align-items:center;justify-content:center;gap:.75rem;flex-wrap:wrap}
+.band-label{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-right:.25rem}
+.band-pill{background:rgba(255,255,255,.08);color:rgba(255,255,255,.75);font-size:.8rem;font-weight:500;padding:.28rem .85rem;border-radius:99px;border:1px solid rgba(255,255,255,.1);transition:background .2s}
+.band-pill:hover{background:rgba(255,255,255,.14)}
+
+/* ── PROBLEM ── */
+.prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.prob-cards{display:flex;flex-direction:column;gap:1rem}
+.prob-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.6rem;display:flex;gap:1.1rem;align-items:flex-start;transition:border-color .25s,box-shadow .25s,transform .25s}
+.prob-card:hover{border-color:var(--pine-light);box-shadow:0 4px 20px rgba(0,0,0,.05);transform:translateX(4px)}
+.prob-icon{width:42px;height:42px;background:var(--pine-faint);border:1px solid var(--pine-light);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--pine-2)}
+.prob-card h3{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:.2rem}
+.prob-card p{font-size:.84rem;color:var(--ink-muted);line-height:1.65}
+
+/* ── LEISTUNGEN HOME (tabs) ── */
+.l-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.l-tabs{display:flex;flex-direction:column}
+.l-tab{padding:1.4rem 0;border-bottom:1px solid var(--border);cursor:pointer;display:flex;gap:1.1rem;align-items:flex-start;transition:padding .2s}
+.l-tab:first-child{border-top:1px solid var(--border)}
+.l-tab.active{padding:1.6rem 0}
+.l-num{font-family:var(--font-d);font-size:1rem;color:var(--border);line-height:1;padding-top:.1rem;flex-shrink:0;min-width:26px;transition:color .2s}
+.l-tab.active .l-num{color:var(--pine)}
+.l-tab h3{font-size:.93rem;font-weight:600;color:var(--ink-muted);transition:color .2s}
+.l-tab.active h3{color:var(--ink)}
+.l-body{max-height:0;overflow:hidden;opacity:0;transition:max-height .4s var(--ease),opacity .3s}
+.l-tab.active .l-body{max-height:180px;opacity:1}
+.l-body p{font-size:.865rem;color:var(--ink-muted);line-height:1.7;padding-top:.45rem}
+.l-body ul{list-style:none;padding-top:.45rem;display:flex;flex-direction:column;gap:.3rem}
+.l-body ul li{font-size:.84rem;color:var(--ink-muted);display:flex;gap:.5rem}
+.l-body ul li::before{content:'–';color:var(--pine-2);flex-shrink:0}
+.l-preview{position:sticky;top:90px}
+.l-card{background:var(--pine);border-radius:18px;padding:2.25rem;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s}
+.l-card.vis{opacity:1;transform:translateY(0)}
+.lc-icon{width:48px;height:48px;background:rgba(255,255,255,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.lc-title{font-family:var(--font-d);font-size:1.35rem;color:#fff;margin-bottom:.65rem;line-height:1.2;letter-spacing:-.015em}
+.lc-desc{font-size:.875rem;color:rgba(255,255,255,.62);line-height:1.75;margin-bottom:1.35rem}
+.lc-save{background:rgba(255,255,255,.08);border-radius:9px;padding:.85rem 1.1rem}
+.lc-save-label{font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:.3rem}
+.lc-save-val{font-family:var(--font-d);font-size:1.4rem;color:#fff;letter-spacing:-.02em}
+
+/* ── ANSATZ ── */
+.ansatz-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:1.4rem;padding:1.6rem 0;border-bottom:1px solid var(--border)}
+.step:last-child{border-bottom:none}
+.step-l{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.step-c{width:34px;height:34px;border-radius:50%;background:var(--pine-faint);border:1.5px solid var(--pine-light);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:.9rem;color:var(--pine);font-weight:700}
+.step-line{width:1px;background:var(--border);flex:1;margin:.45rem 0;min-height:16px}
+.step:last-child .step-line{display:none}
+.step h3{font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;padding-top:.2rem}
+.step p{font-size:.855rem;color:var(--ink-muted);line-height:1.65}
+.ansatz-box{background:var(--pine);border-radius:18px;padding:2.5rem;position:sticky;top:90px}
+.ab-title{font-family:var(--font-d);font-size:1.45rem;color:#fff;margin-bottom:.7rem;line-height:1.2;letter-spacing:-.015em}
+.ab-sub{font-size:.875rem;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:1.75rem}
+.ab-list{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.ab-list li{font-size:.86rem;color:rgba(255,255,255,.8);display:flex;gap:.7rem;align-items:flex-start;line-height:1.5}
+.ab-ck{width:17px;height:17px;background:rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+
+/* ── PROCESS ── */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.proc-step{padding:2.25rem 1.75rem;border-right:1px solid var(--border);transition:background .2s}
+.proc-step:last-child{border-right:none}
+.proc-step:hover{background:var(--pine-faint)}
+.proc-n{font-family:var(--font-d);font-size:3rem;color:var(--border);line-height:1;margin-bottom:1.1rem;letter-spacing:-.04em}
+.proc-step h3{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:.35rem}
+.proc-step p{font-size:.835rem;color:var(--ink-muted);line-height:1.6}
+
+/* ── PRICING ── */
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.pc{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2.1rem 1.85rem;display:flex;flex-direction:column;position:relative;transition:box-shadow .25s,transform .25s,border-color .25s;cursor:pointer}
+.pc:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+.pc.feat{border:2px solid var(--pine);background:var(--pine-faint)}
+.pc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pine);color:#fff;font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.26rem .85rem;border-radius:99px;white-space:nowrap}
+.pc-tier{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:1rem}
+.pc-price{font-family:var(--font-d);font-size:2.8rem;color:var(--ink);letter-spacing:-.04em;line-height:1;margin-bottom:.3rem}
+.pc-price sup{font-size:1.05rem;vertical-align:super;letter-spacing:0}
+.pc-desc{font-size:.825rem;color:var(--ink-muted);margin-bottom:1.4rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border);line-height:1.6}
+.pc-list{list-style:none;flex:1;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.75rem}
+.pc-list li{font-size:.855rem;color:var(--ink-muted);display:flex;gap:.55rem;align-items:flex-start;line-height:1.5}
+.pc-list li::before{content:'→';color:var(--pine-2);font-weight:700;flex-shrink:0}
+.pc-expand{font-size:.77rem;color:var(--pine-2);font-weight:600;cursor:pointer;margin-top:-.4rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:.3rem;background:none;border:none;font-family:var(--font-b);padding:0;transition:opacity .2s}
+.pc-expand:hover{opacity:.7}
+.pc-hidden{display:none}
+.pc-hidden.open{display:flex}
+.pc-btn{display:block;text-align:center;padding:.75rem;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;border:none;font-family:var(--font-b);text-decoration:none;transition:all .22s}
+.pc-btn:hover{transform:translateY(-1px)}
+.pc-ghost{border:1.5px solid var(--border-mid);color:var(--ink);background:transparent}
+.pc-ghost:hover{border-color:var(--pine);color:var(--pine)}
+.pc-solid{background:var(--pine);color:#fff;box-shadow:0 2px 12px rgba(26,60,46,.18)}
+.pc-solid:hover{background:var(--pine-2);box-shadow:0 5px 20px rgba(26,60,46,.24)}
+.pc.highlighted{border-color:var(--pine);box-shadow:0 0 0 2px var(--pine),0 8px 32px rgba(26,60,46,.12);transform:translateY(-4px)}
+
+/* ── FAQ ── */
+.faq{margin-top:3.5rem}
+.faq-ttl{font-family:var(--font-d);font-size:1.45rem;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.015em}
+.faq-item{border-top:1px solid var(--border)}
+.faq-item:last-child{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;padding:1.15rem 0;display:flex;justify-content:space-between;align-items:center;background:none;border:none;font-family:var(--font-b);font-size:.93rem;font-weight:600;color:var(--ink);cursor:pointer;text-align:left;gap:1rem}
+.faq-icon{width:21px;height:21px;border:1.5px solid var(--border-mid);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s,border-color .2s}
+.faq-q:hover .faq-icon{border-color:var(--pine);background:var(--pine-faint)}
+.faq-icon svg{transition:transform .3s var(--ease)}
+.faq-item.open .faq-icon svg{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-item.open .faq-a{max-height:200px}
+.faq-inner{padding-bottom:1.15rem;font-size:.88rem;color:var(--ink-muted);line-height:1.75;max-width:580px}
+
+/* ── CONTACT ── */
+.cont-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
+.cont-facts{margin-top:2.25rem;display:flex;flex-direction:column;gap:1.1rem}
+.cf{display:flex;gap:.9rem;align-items:flex-start}
+.cf-icon{width:36px;height:36px;background:var(--pine-faint);border:1px solid var(--pine-light);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--pine-2)}
+.cf-label{font-size:.78rem;font-weight:600;color:var(--ink);margin-bottom:.08rem}
+.cf-text{font-size:.84rem;color:var(--ink-muted);line-height:1.5}
+.form-wrap{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:2.5rem;box-shadow:0 2px 20px rgba(0,0,0,.04)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:.9rem}
+.fg label{font-size:.76rem;font-weight:600;color:var(--ink-mid);letter-spacing:.03em}
+.fg input,.fg select,.fg textarea{font-family:var(--font-b);font-size:max(.89rem,16px);padding:.68rem .9rem;border:1.5px solid var(--border);border-radius:8px;color:var(--ink);background:var(--off);transition:border-color .2s,box-shadow .2s,background .2s;outline:none;resize:vertical;width:100%;-webkit-appearance:none;appearance:none}
+.fg select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235a5a56' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center;padding-right:2.5rem}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--pine-2);box-shadow:0 0 0 3px rgba(26,60,46,.09);background-color:var(--surface)}
+.form-submit{width:100%;padding:.88rem;background:var(--pine);color:#fff;border:none;border-radius:8px;font-family:var(--font-b);font-size:.93rem;font-weight:600;cursor:pointer;transition:all .25s;box-shadow:0 2px 12px rgba(26,60,46,.18)}
+.form-submit:hover{background:var(--pine-2);transform:translateY(-1px);box-shadow:0 5px 22px rgba(26,60,46,.23)}
+.form-note{font-size:.75rem;color:var(--ink-faint);text-align:center;margin-top:.75rem}
+
+/* ── ÜBER UNS ── */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.story h2{font-family:var(--font-d);font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.1;letter-spacing:-.025em;margin-bottom:1.25rem}
+.story p{font-size:.95rem;color:var(--ink-muted);line-height:1.85;margin-bottom:1.2rem}
+.story p strong{color:var(--ink);font-weight:600}
+.story-aside{position:sticky;top:90px;display:flex;flex-direction:column;gap:1rem}
+.aside-box{background:var(--pine);border-radius:16px;padding:2rem;color:#fff}
+.aside-box h3{font-family:var(--font-d);font-size:1.2rem;color:#fff;margin-bottom:.55rem;letter-spacing:-.01em}
+.aside-box p{font-size:.87rem;color:rgba(255,255,255,.65);line-height:1.7}
+.aside-stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.6rem;display:flex;flex-direction:column;gap:.2rem}
+.aside-stat-n{font-family:var(--font-d);font-size:2rem;color:var(--pine);letter-spacing:-.025em;line-height:1}
+.aside-stat-l{font-size:.82rem;color:var(--ink-muted);line-height:1.5}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3.5rem}
+.team-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:box-shadow .25s,transform .25s}
+.team-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+.team-av{height:200px;background:var(--pine-faint);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border);position:relative}
+.team-init{font-family:var(--font-d);font-size:3.5rem;color:var(--pine);opacity:.3;letter-spacing:-.04em}
+.team-badge{position:absolute;bottom:.85rem;left:.85rem;background:var(--pine);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .7rem;border-radius:99px}
+.team-info{padding:1.6rem}
+.team-name{font-family:var(--font-d);font-size:1.3rem;color:var(--ink);letter-spacing:-.02em;margin-bottom:.15rem}
+.team-role{font-size:.73rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pine-2);margin-bottom:.9rem}
+.team-bio{font-size:.86rem;color:var(--ink-muted);line-height:1.7;margin-bottom:1.1rem}
+.team-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+.team-tag{background:var(--pine-faint);border:1px solid var(--pine-light);color:var(--pine-2);font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:99px}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:3.5rem}
+.val{background:var(--surface);padding:2rem 1.6rem;transition:background .2s}
+.val:hover{background:var(--pine-faint)}
+.val-icon{width:40px;height:40px;background:var(--pine-faint);border:1px solid var(--pine-light);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;color:var(--pine-2)}
+.val h3{font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:.35rem}
+.val p{font-size:.845rem;color:var(--ink-muted);line-height:1.65}
+.tl{display:flex;flex-direction:column}
+.tl-item{display:flex;gap:1.75rem;padding:1.75rem 0;border-bottom:1px solid var(--border)}
+.tl-item:last-child{border-bottom:none}
+.tl-left{flex-shrink:0;width:72px;text-align:right}
+.tl-year{font-family:var(--font-d);font-size:.95rem;color:var(--pine);font-weight:700}
+.tl-dot{width:9px;height:9px;background:var(--gold);border-radius:50%;margin:.45rem 0 0 auto}
+.tl-content h3{font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:.28rem}
+.tl-content p{font-size:.865rem;color:var(--ink-muted);line-height:1.65}
+
+/* ── CTA BOX ── */
+.cta-box{background:var(--pine);border-radius:20px;padding:3.5rem 3rem;text-align:center}
+.cta-box h2{font-family:var(--font-d);font-size:clamp(1.8rem,3vw,2.5rem);color:#fff;letter-spacing:-.025em;line-height:1.1;margin-bottom:.9rem}
+.cta-box p{font-size:.97rem;color:rgba(255,255,255,.62);max-width:440px;margin:0 auto 2rem;line-height:1.8}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ── LEISTUNGEN PAGE ── */
+.l-detail-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:18px;overflow:hidden}
+.ld-card{background:var(--surface);padding:2.25rem;display:grid;grid-template-columns:70px 1fr 1fr;gap:2rem;align-items:start;transition:background .2s}
+.ld-card:hover{background:var(--pine-faint)}
+.ld-num{font-family:var(--font-d);font-size:2.2rem;color:var(--border);letter-spacing:-.04em;line-height:1;padding-top:.2rem}
+.ld-left h3{font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:.45rem}
+.ld-left p{font-size:.865rem;color:var(--ink-muted);line-height:1.7}
+.ld-right{display:flex;flex-direction:column;gap:.5rem}
+.ld-point{display:flex;gap:.55rem;align-items:flex-start}
+.ld-ck{width:17px;height:17px;background:var(--pine-faint);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.ld-ck svg{stroke:var(--pine-2)}
+.ld-point p{font-size:.845rem;color:var(--ink-muted);line-height:1.55}
+.ld-point p strong{color:var(--ink);font-weight:600}
+.ld-save{margin-top:.5rem;background:var(--pine-faint);border:1px solid var(--pine-light);border-radius:7px;padding:.5rem .8rem;display:inline-flex;align-items:center;gap:.4rem;font-size:.76rem;font-weight:600;color:var(--pine-2)}
+.branchen{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.branche{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.4rem;display:flex;gap:.9rem;align-items:flex-start;transition:border-color .2s,background .2s}
+.branche:hover{border-color:var(--pine-light);background:var(--pine-faint)}
+.b-icon{width:38px;height:38px;background:var(--pine-faint);border:1px solid var(--pine-light);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--pine-2)}
+.b-title{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:.15rem}
+.b-desc{font-size:.8rem;color:var(--ink-muted);line-height:1.55}
+
+/* ── IMPRESSUM MODAL ── */
+#imp-overlay{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:2rem}
+.imp-box{background:#fff;border-radius:18px;padding:2.75rem;max-width:540px;width:100%;max-height:85vh;overflow-y:auto;position:relative}
+.imp-close{position:absolute;top:1.1rem;right:1.1rem;background:none;border:none;cursor:pointer;color:var(--ink-faint);font-size:1.4rem;line-height:1;transition:color .2s}
+.imp-close:hover{color:var(--ink)}
+.imp-section{margin-bottom:1.4rem}
+.imp-section:last-child{margin-bottom:0;padding-top:1rem;border-top:1px solid var(--border)}
+.imp-section-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mid);margin-bottom:.3rem}
+.imp-section p{font-size:.88rem;color:var(--ink-muted);line-height:1.7}
+.imp-section a{color:var(--pine);text-decoration:none}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);padding:3rem;padding-bottom:calc(3rem + env(safe-area-inset-bottom,0px))}
+.fi{max-width:1060px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.25rem}
+.fl{font-family:var(--font-d);font-size:2rem;color:#fff;display:flex;align-items:center;gap:5px;cursor:pointer}
+.fl-dot{width:6px;height:6px;background:var(--gold);border-radius:50%}
+.flinks{display:flex;gap:1.75rem}
+.flinks a{color:rgba(255,255,255,.3);font-size:.81rem;text-decoration:none;transition:color .2s;cursor:pointer}
+.flinks a:hover{color:rgba(255,255,255,.8)}
+.fcopy{font-size:.76rem;color:rgba(255,255,255,.2)}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeLeft{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:translateX(0)}}
+@keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.reveal-l{opacity:0;transform:translateX(-18px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.reveal-r{opacity:0;transform:translateX(18px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.reveal.in,.reveal-l.in,.reveal-r.in{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr;padding:5rem 0 4rem}
+  .hero-card{display:none}
+  .prob-grid,.l-grid,.ansatz-grid,.cont-grid,.story-grid{grid-template-columns:1fr;gap:2.5rem}
+  .l-preview,.ansatz-box,.story-aside{position:static}
+  .proc{grid-template-columns:1fr 1fr}
+  .proc-step:nth-child(2){border-right:none}
+  .proc-step:nth-child(1),.proc-step:nth-child(2){border-bottom:1px solid var(--border)}
+  .p-grid,.vals,.branchen{grid-template-columns:1fr}
+  .p-grid{max-width:400px;margin:0 auto}
+  .team-grid{grid-template-columns:1fr}
+  .sec{padding:4rem 1.75rem}
+  nav{padding:0 1.5rem}
+  .nav-links{display:none}
+  .hamburger{display:block}
+  .mobile-menu{display:block}
+  footer{padding:2rem 1.5rem}
+  .fi{flex-direction:column;text-align:center}
+  .flinks{justify-content:center;flex-wrap:wrap;gap:1rem}
+  .page-hero{padding:8rem 1.5rem 4rem}
+  .cta-box{padding:2.75rem 1.5rem}
+  .cta-btns{flex-direction:column;align-items:center;gap:.75rem}
+  .cta-btns .btn{width:100%;max-width:280px;text-align:center;justify-content:center}
+  .ld-card{grid-template-columns:48px 1fr;gap:1.25rem}
+  .ld-right{margin-top:.75rem;grid-column:1/-1}
+  .ld-num{font-size:1.8rem}
+  .branchen{grid-template-columns:1fr 1fr}
+  #imp-overlay{padding:1rem}
+  .imp-box{padding:2rem 1.5rem;border-radius:14px;max-height:90vh}
+}
+
+@media(max-width:600px){
+  .proc{grid-template-columns:1fr}
+  .proc-step{border-right:none!important;border-bottom:1px solid var(--border)!important}
+  .proc-step:last-child{border-bottom:none!important}
+  .form-row{grid-template-columns:1fr}
+  .hero{padding:0 1.25rem}
+  .hero h1{font-size:2.2rem}
+  .hero-sub{font-size:.95rem}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{width:100%;text-align:center;justify-content:center}
+  .band{padding:1rem 1.25rem;gap:.5rem}
+  .band-pill{font-size:.72rem;padding:.22rem .65rem}
+  .sec{padding:3rem 1.25rem}
+  .ld-card{grid-template-columns:1fr;padding:1.5rem}
+  .ld-num{font-size:1.4rem}
+  .ld-right{grid-column:auto}
+  h2.ttl{font-size:1.7rem}
+  .sub{font-size:.92rem}
+  .branchen{grid-template-columns:1fr}
+  .page-hero{padding:7rem 1.25rem 3.5rem}
+  .page-hero h1{font-size:clamp(1.8rem,7vw,2.4rem)}
+  .page-hero p{font-size:.92rem}
+  .prob-card{padding:1.2rem}
+  .l-card{padding:1.75rem}
+  .ansatz-box{padding:1.75rem}
+  .pc{padding:1.6rem 1.4rem}
+  .form-wrap{padding:1.75rem 1.25rem}
+  .scroll-hint{display:none}
+  .flinks{gap:.75rem}
+  .flinks a{font-size:.75rem}
+  .cont-facts{gap:.85rem}
+  .team-card .team-av{height:160px}
+  .team-info{padding:1.25rem}
+  .imp-box{padding:1.5rem 1.25rem;border-radius:12px;margin:.5rem}
+  .imp-close{top:.75rem;right:.75rem}
+
+  /* Touch-friendly: larger tap targets */
+  .faq-q{padding:1.3rem 0;font-size:.88rem}
+  .faq-icon{width:28px;height:28px}
+  .pc-expand{padding:.5rem 0;font-size:.82rem}
+  .l-tab{padding:1.2rem 0;gap:.85rem}
+  .step{gap:1rem}
+  .prob-icon{width:38px;height:38px}
+}
+
+/* ── VERY SMALL PHONES (SE, older iPhones) ── */
+@media(max-width:375px){
+  .hero h1{font-size:1.9rem}
+  .hero-sub{font-size:.88rem}
+  nav{padding:0 1rem;height:60px}
+  .mobile-menu{top:60px;padding:1rem}
+  .logo{font-size:2rem}
+  .sec{padding:2.5rem 1rem}
+  .form-wrap{padding:1.5rem 1rem}
+  .band{padding:.85rem 1rem}
+  .band-pill{font-size:.68rem}
+  .pc-price{font-size:2.2rem}
+  .cta-box{padding:2rem 1rem;border-radius:14px}
+  .page-hero{padding:6rem 1rem 3rem}
+  .imp-box{margin:.25rem}
+}
+
+/* ── REDUCED MOTION ── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.reveal-l,.reveal-r{opacity:1;transform:none}
+  .hero h1,.hero-sub,.hero-btns,.hero-label,.hero-card,.scroll-hint{opacity:1;transform:none;animation:none}
+}
+
+/* ── FOCUS VISIBLE ── */
+:focus-visible{outline:2px solid var(--pine);outline-offset:2px;border-radius:4px}
+button:focus:not(:focus-visible),a:focus:not(:focus-visible){outline:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo" onclick="showPage('home')">Vekst <span class="logo-dot"></span></div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" id="nav-home" class="active">Start</a></li>
+    <li><a onclick="showPage('leistungen')" id="nav-leistungen">Leistungen</a></li>
+    <li><a onclick="showPage('preise')" id="nav-preise">Preise</a></li>
+    <li><a onclick="showPage('ueber')" id="nav-ueber">Über uns</a></li>
+    <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)" class="nav-cta">Anfragen</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a onclick="showPage('home');closeMobileMenu()">Start</a>
+  <a onclick="showPage('leistungen');closeMobileMenu()">Leistungen</a>
+  <a onclick="showPage('preise');closeMobileMenu()">Preise</a>
+  <a onclick="showPage('ueber');closeMobileMenu()">Über uns</a>
+  <a class="mm-cta" onclick="showPage('home');closeMobileMenu();setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Anfragen</a>
+</div>
+
+<!-- ═══════════ PAGE: HOME ═══════════ -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-label"><span class="hero-label-line"></span>KI-Partnerschaft für Ihren Betrieb</div>
+        <h1>Mehr Zeit fürs Wesentliche – <em>KI erledigt den Rest.</em></h1>
+        <p class="hero-sub">Vekst zeigt Ihnen, wie KI die lästigen Routineaufgaben übernimmt – damit Sie und Ihr Team sich auf das konzentrieren können, was wirklich zählt: die eigentliche Arbeit.</p>
+        <div class="hero-btns">
+          <button class="btn btn-pine" onclick="document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">Partnerschaft anfragen</button>
+          <button class="btn btn-line" onclick="showPage('leistungen')">Alle Leistungen</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hc-top"><div class="hc-dot"></div><div class="hc-dot"></div><div class="hc-dot"></div><span class="hc-title">Vekst · Ergebnisse</span></div>
+        <div class="stats">
+          <div class="stat"><div class="stat-n">3 h</div><div class="stat-l">Ø Zeitersparnis pro Woche ab Monat 1</div></div>
+          <div class="stat"><div class="stat-n">30 s</div><div class="stat-l">statt 20 Min. für ein professionelles Angebot</div></div>
+          <div class="stat"><div class="stat-n">100%</div><div class="stat-l">praxisnah – live eingerichtet, kein Vortrag</div></div>
+          <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Begleitung so lange Sie uns brauchen</div></div>
+        </div>
+        <div class="hc-quote"><div class="hc-qbar"></div><p class="hc-qt">„Wir kommen nicht, zeigen etwas und verschwinden. Wir bleiben dabei, bis KI wirklich in Ihrem Betrieb angekommen ist."</p></div>
+      </div>
+    </div>
+    <div class="scroll-hint" onclick="document.getElementById('problem').scrollIntoView({behavior:'smooth'})" style="cursor:pointer"><span>Mehr erfahren</span><div class="scroll-arr"></div></div>
+  </section>
+
+  <div class="band">
+    <span class="band-label">Für Branchen wie</span>
+    <span class="band-pill">Handwerk</span><span class="band-pill">Immobilien</span><span class="band-pill">Hausverwaltung</span><span class="band-pill">Lokale Dienstleister</span><span class="band-pill">Kleine Agenturen</span><span class="band-pill">Einzelhandel</span>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="sec" id="problem">
+    <div class="wrap">
+      <div class="prob-grid">
+        <div class="reveal-l">
+          <div class="eyebrow">Warum Vekst</div>
+          <h2 class="ttl">KI ist da. Aber kaum jemand nutzt sie richtig.</h2>
+          <p class="sub">Die meisten Betriebe haben von ChatGPT gehört. Der Sprung von „mal ausprobiert" zu „spart uns täglich Zeit" gelingt selten alleine – genau da kommen wir ins Spiel.</p>
+          <button class="btn btn-line" onclick="showPage('leistungen')">Unsere Leistungen ansehen</button>
+        </div>
+        <div class="prob-cards reveal-r">
+          <div class="prob-card">
+            <div class="prob-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><h3>Kein Zeit zum Ausprobieren</h3><p>Das Tagesgeschäft lässt keinen Raum für neue Tools – also bleibt alles beim Alten, obwohl man weiß, dass es besser gehen könnte.</p></div>
+          </div>
+          <div class="prob-card">
+            <div class="prob-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+            <div><h3>Unklarer Nutzen</h3><p>Welches Tool? Für welche Aufgabe? Wie formuliere ich das richtig? Zu viele offene Fragen, zu wenig konkrete Antworten.</p></div>
+          </div>
+          <div class="prob-card">
+            <div class="prob-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <div><h3>Unsicherheit &amp; Skepsis</h3><p>Was passiert mit meinen Daten? Kann ich dem vertrauen? Berechtigte Fragen – die wir gemeinsam beantworten, bevor wir starten.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN HOME -->
+  <section class="sec sec-warm" id="leistungen-home">
+    <div class="wrap">
+      <div class="eyebrow reveal">Leistungen</div>
+      <h2 class="ttl reveal">Was wir konkret für Sie tun.</h2>
+      <div class="l-grid">
+        <div class="l-tabs reveal-l" id="ltabs">
+          <div class="l-tab active" data-i="0"><div class="l-num">01</div><div><h3>Angebote &amp; Rechnungen</h3><div class="l-body"><p>Aus einer Kundenanfrage wird in 30 Sekunden ein professionelles Angebot.</p><ul><li>Individuelle Prompt-Vorlagen</li><li>Für das ganze Team nutzbar</li><li>Kein technisches Vorwissen nötig</li></ul></div></div></div>
+          <div class="l-tab" data-i="1"><div class="l-num">02</div><div><h3>Google-Bewertungen</h3><div class="l-body"><p>KI schreibt individuelle Antworten auf jede Rezension – in zwei Minuten.</p><ul><li>Auch für negative Bewertungen</li><li>Verbessert Google-Ranking</li><li>Klingt menschlich, nicht generisch</li></ul></div></div></div>
+          <div class="l-tab" data-i="2"><div class="l-num">03</div><div><h3>Social Media</h3><div class="l-body"><p>Foto + Prompt = fertiger Post mit Text und Hashtags. Ohne Agentur.</p><ul><li>Instagram, Facebook, LinkedIn</li><li>Ihr Stil, Ihre Stimme</li><li>Unter 2 Minuten pro Post</li></ul></div></div></div>
+          <div class="l-tab" data-i="3"><div class="l-num">04</div><div><h3>Kundenkommunikation</h3><div class="l-body"><p>Schwierige Mails, Reklamationen: KI formuliert sachlich und professionell.</p><ul><li>Deeskalierend formuliert</li><li>Spart Nerven und Zeit</li><li>Für jede Art von Kundenmail</li></ul></div></div></div>
+          <div class="l-tab" data-i="4"><div class="l-num">05</div><div><h3>Recruiting</h3><div class="l-body"><p>Aus einem Dreizeiler wird eine Anzeige, die Azubis wirklich anspricht.</p><ul><li>Für Indeed, Instagram, Aushang</li><li>Zielgruppen-spezifische Sprache</li><li>Mehr Bewerbungen, weniger Aufwand</li></ul></div></div></div>
+          <div class="l-tab" data-i="5"><div class="l-num">06</div><div><h3>Dokumentation &amp; Protokolle</h3><div class="l-body"><p>Sprachnachricht ins Handy – KI macht daraus ein sauberes Protokoll.</p><ul><li>Für Baustellen, Meetings, Berichte</li><li>In Minuten statt Stunden</li><li>Kein Abtippen mehr</li></ul></div></div></div>
+        </div>
+        <div class="l-preview reveal-r">
+          <div class="l-card vis" id="lcard">
+            <div class="lc-icon" id="lc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <div class="lc-title" id="lc-title">Angebote &amp; Rechnungen</div>
+            <div class="lc-desc" id="lc-desc">Ihre Kunden schicken eine Anfrage – in 30 Sekunden haben Sie ein professionelles Angebot. Wir richten die Vorlagen live an Ihrem Laptop ein, damit Ihr Team das sofort alleine kann.</div>
+            <div class="lc-save"><div class="lc-save-label">Zeitersparnis</div><div class="lc-save-val" id="lc-save">20 Min. → 30 Sek.</div></div>
+          </div>
+          <div style="margin-top:1.25rem;text-align:center">
+            <button class="btn btn-line" onclick="showPage('leistungen')" style="font-size:.85rem;padding:.65rem 1.4rem">Alle Leistungen im Detail →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANSATZ -->
+  <section class="sec" id="ansatz">
+    <div class="wrap">
+      <div class="ansatz-grid">
+        <div class="reveal-l">
+          <div class="eyebrow">Unser Ansatz</div>
+          <h2 class="ttl">Partnerschaft statt Projekteinsatz.</h2>
+          <p class="sub">Viele Beratungen liefern eine Präsentation und verschwinden. Wir arbeiten anders: langfristig, operativ, nah an Ihrer täglichen Arbeit.</p>
+          <div class="steps">
+            <div class="step"><div class="step-l"><div class="step-c">1</div><div class="step-line"></div></div><div><h3>Erst zuhören</h3><p>Was nervt täglich? Wo verliert Ihr Team die meiste Zeit? Keine Lösungen, bevor wir das verstehen.</p></div></div>
+            <div class="step"><div class="step-l"><div class="step-c">2</div><div class="step-line"></div></div><div><h3>Live einrichten, nicht präsentieren</h3><p>Wir kommen zu Ihnen, setzen uns an Ihren Rechner und lösen die Probleme – direkt, gemeinsam, sofort sichtbar.</p></div></div>
+            <div class="step"><div class="step-l"><div class="step-c">3</div><div class="step-line"></div></div><div><h3>Ihr Team lernt mit</h3><p>Kein Black-Box-Tool. Ihr Team bekommt alle Vorlagen und kann danach eigenständig damit arbeiten.</p></div></div>
+            <div class="step"><div class="step-l"><div class="step-c">4</div></div><div><h3>Wir bleiben dabei</h3><p>Monatliche Check-ins, neue Tools erklärt, Anpassungen – als Ihr Partner, so lange Sie uns brauchen.</p></div></div>
+          </div>
+        </div>
+        <div class="reveal-r">
+          <div class="ansatz-box">
+            <div class="ab-title">Was uns unterscheidet</div>
+            <div class="ab-sub">Wir sind keine IT-Firma, die Software verkauft. Wir sind operative Partner – auf Augenhöhe, mit echtem Verständnis für den Betriebsalltag.</div>
+            <ul class="ab-list">
+              <li><span class="ab-ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Keine teuren Softwarelizenzen</li>
+              <li><span class="ab-ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Kein Fachjargon – klare Sprache, klare Ergebnisse</li>
+              <li><span class="ab-ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Kein einmaliger Workshop und tschüss</li>
+              <li><span class="ab-ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Alles individuell auf Ihren Betrieb</li>
+              <li><span class="ab-ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Erreichbar per WhatsApp, nicht per Ticket</li>
+              <li><span class="ab-ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Wir messen, ob es wirklich Zeit spart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section class="sec sec-warm">
+    <div class="wrap">
+      <div class="eyebrow reveal">Ablauf</div>
+      <h2 class="ttl reveal">So starten wir zusammen.</h2>
+      <p class="sub reveal">Kein langes Onboarding. Wir kommen zu Ihnen – und legen sofort los.</p>
+      <div class="proc reveal">
+        <div class="proc-step"><div class="proc-n">01</div><h3>Kennenlernen</h3><p>30 Minuten, kostenlos. Wir hören zu – was nervt täglich, wo verliert Ihr Team Zeit?</p></div>
+        <div class="proc-step"><div class="proc-n">02</div><h3>Workshop vor Ort</h3><p>Wir kommen zu Ihnen und lösen Ihre größten Zeitfresser live, direkt an Ihrem Rechner.</p></div>
+        <div class="proc-step"><div class="proc-n">03</div><h3>Übergabe &amp; Training</h3><p>Ihr Team bekommt alle Vorlagen und Anleitungen schriftlich – damit jeder eigenständig arbeiten kann.</p></div>
+        <div class="proc-step"><div class="proc-n">04</div><h3>Laufende Partnerschaft</h3><p>Monatliche Check-ins, neue Tools, Anpassungen – wir bleiben dabei.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREISE -->
+  <section class="sec" id="preise">
+    <div class="wrap">
+      <div class="eyebrow reveal">Partnerschaftsmodelle</div>
+      <h2 class="ttl reveal">Transparent. Ohne Überraschungen.</h2>
+      <p class="sub reveal">Das Erstgespräch ist immer kostenlos.</p>
+      <div class="p-grid reveal">
+        <div class="pc" onclick="highlightCard(this)">
+          <p class="pc-tier">Einstieg</p>
+          <p class="pc-price"><sup>€</sup>149</p>
+          <p class="pc-desc">Für Betriebe, die mit einem konkreten Problem starten wollen.</p>
+          <ul class="pc-list"><li>1,5-stündiger Workshop vor Ort</li><li>Bis zu 2 Anwendungsfälle eingerichtet</li><li>Prompt-Vorlagen zum Mitnehmen</li><li>1 Woche Nachbetreuung per Mail</li><li>Checkliste für Ihren Betrieb</li><li>Empfehlungen für nächste Schritte</li></ul>
+          <button class="pc-btn pc-ghost" onclick="event.stopPropagation();document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">Jetzt anfragen</button>
+        </div>
+        <div class="pc feat" onclick="highlightCard(this)">
+          <span class="pc-badge">Empfohlen</span>
+          <p class="pc-tier">Partnerschaft</p>
+          <p class="pc-price"><sup>€</sup>249</p>
+          <p class="pc-desc">Für Betriebe, die KI wirklich in den Alltag integrieren wollen.</p>
+          <ul class="pc-list"><li>3-stündiger Workshop vor Ort</li><li>Bis zu 4 Anwendungsfälle eingerichtet</li><li>Individuelle Prompt-Bibliothek</li><li>Kurzanleitungen für Ihr Team</li><li>2 Wochen Begleitung per WhatsApp</li><li>Schulung für bis zu 3 Mitarbeiter</li><li>Dokumentation aller Workflows</li></ul>
+          <button class="pc-btn pc-solid" onclick="event.stopPropagation();document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">Jetzt anfragen</button>
+        </div>
+        <div class="pc" onclick="highlightCard(this)">
+          <p class="pc-tier">Langzeit-Partner</p>
+          <p class="pc-price" style="font-size:1.85rem;padding-top:.3rem">Auf Anfrage</p>
+          <p class="pc-desc">Für Betriebe, die dauerhaft begleitet werden wollen.</p>
+          <ul class="pc-list"><li>Alles aus Partnerschaft</li><li>Monatlicher Strategy-Check-in</li><li>Neue KI-Tools erklärt &amp; eingerichtet</li><li>Direkter Draht – jederzeit erreichbar</li><li>Individuell vereinbarte Konditionen</li><li>Quartalsweise Strategie-Review</li><li>Neue Mitarbeiter einschulen</li></ul>
+          <button class="pc-btn pc-ghost" onclick="event.stopPropagation();document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">Jetzt anfragen</button>
+        </div>
+      </div>
+      <div class="faq reveal" style="margin-top:3.5rem">
+        <div class="faq-ttl">Häufige Fragen</div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Brauche ich Vorkenntnisse?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Überhaupt nicht. Viele unserer Kunden haben vorher noch nie mit KI-Tools gearbeitet – das ist unser Ausgangspunkt, kein Problem.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Was passiert mit unseren Daten?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Wir nutzen ausschließlich DSGVO-konforme Tools und erklären genau, welche Daten wohin gehen – bevor wir irgendetwas einrichten.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Wie schnell sehen wir erste Ergebnisse?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Noch während des Workshops. Sie sehen sofort, wie eine Aufgabe die vorher 20 Minuten gedauert hat, in 30 Sekunden erledigt ist.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Was kostet das Erstgespräch?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Nichts. Das Erstgespräch ist immer kostenlos und unverbindlich – 30 Minuten, per Telefon oder vor Ort.</div></div></div>
+      </div>
+      <p style="text-align:center;margin-top:1.5rem;font-size:.77rem;color:var(--ink-faint)">Alle Preise sind Endpreise.</p>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="sec sec-warm" id="kontakt">
+    <div class="wrap">
+      <div class="cont-grid">
+        <div class="reveal-l">
+          <div class="eyebrow">Kontakt</div>
+          <h2 class="ttl">Lassen Sie uns reden.</h2>
+          <p style="font-size:.97rem;color:var(--ink-muted);line-height:1.8">Das erste Gespräch kostet nichts und verpflichtet zu nichts. Wir melden uns innerhalb von 24 Stunden – persönlich.</p>
+          <div class="cont-facts">
+            <div class="cf"><div class="cf-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.04 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="cf-label">Telefon</div><div class="cf-text"><a href="tel:+4915120271857" style="color:var(--pine);text-decoration:none">+49 151 20271857</a> (John)<br><a href="tel:+4917684919186" style="color:var(--pine);text-decoration:none">+49 176 84919186</a> (Samuel)</div></div></div>
+            <div class="cf"><div class="cf-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="cf-label">E-Mail</div><div class="cf-text"><a href="mailto:info@get-vekst.de" style="color:var(--pine);text-decoration:none">info@get-vekst.de</a></div></div></div>
+            <div class="cf"><div class="cf-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div><div class="cf-label">Reaktionszeit</div><div class="cf-text">Innerhalb von 24 Stunden, werktags meist am selben Tag.</div></div></div>
+          </div>
+        </div>
+        <div class="reveal-r">
+          <div class="form-wrap" style="text-align:center;padding:3rem 2rem">
+            <div style="width:56px;height:56px;background:var(--gold-faint,rgba(184,137,46,.1));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <p style="font-family:var(--font-d);font-size:1.35rem;color:var(--ink);margin-bottom:.75rem;line-height:1.3">Wir suchen Pilotunternehmen.</p>
+            <p style="font-size:.92rem;color:var(--ink-muted);line-height:1.8;max-width:380px;margin:0 auto 1.5rem">Wir starten bald offiziell – und suchen 3–5 Betriebe, die unsere KI-Workshops <strong>kostenlos</strong> testen möchten. Sie bekommen den vollen Workshop, wir sammeln Erfahrung und Feedback. Kein Haken.</p>
+            <div style="display:flex;flex-direction:column;gap:.6rem;max-width:280px;margin:0 auto">
+              <a href="mailto:info@get-vekst.de?subject=Interesse%20als%20Pilotunternehmen&body=Hallo%20Vekst-Team%2C%0A%0Aich%20hätte%20Interesse%20als%20Pilotunternehmen.%0A%0AUnser%20Betrieb%3A%20%0ABranche%3A%20%0ATelefonnummer%20(damit%20wir%20Sie%20erreichen%20können)%3A%20%0A%0AViele%20Grüße" class="contact-gate" onclick="return handleContactClick(event)" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--pine);color:#fff;padding:.75rem 1.4rem;border-radius:8px;font-weight:600;font-size:.88rem;text-decoration:none;transition:background .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>E-Mail schreiben</a>
+              <a href="https://wa.me/4915120271857?text=Hallo%20Vekst-Team%2C%20ich%20hätte%20Interesse%20als%20Pilotunternehmen." target="_blank" rel="noopener" class="contact-gate" onclick="return handleContactClick(event)" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:#25D366;color:#fff;padding:.75rem 1.4rem;border-radius:8px;font-weight:600;font-size:.88rem;text-decoration:none;transition:opacity .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.372 0-4.567-.82-6.293-2.192l-.44-.352-3.244 1.088 1.088-3.244-.352-.44A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp</a>
+              <a href="tel:+4915120271857" class="contact-gate" onclick="return handleContactClick(event)" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--surface);color:var(--ink);padding:.75rem 1.4rem;border-radius:8px;font-weight:600;font-size:.88rem;text-decoration:none;border:1.5px solid var(--border-mid);transition:border-color .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.04 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>John anrufen</a>
+              <a href="tel:+4917684919186" class="contact-gate" onclick="return handleContactClick(event)" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--surface);color:var(--ink);padding:.75rem 1.4rem;border-radius:8px;font-weight:600;font-size:.88rem;text-decoration:none;border:1.5px solid var(--border-mid);transition:border-color .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.04 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Samuel anrufen</a>
+            </div>
+<!-- Datenschutz-Einwilligungs-Overlay -->
+<div id="privacy-gate" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:10000;align-items:center;justify-content:center;padding:1rem" onclick="if(event.target===this)closePrivacyGate()">
+  <div style="background:#fff;border-radius:16px;max-width:460px;width:100%;max-height:85vh;overflow-y:auto;padding:2rem;box-shadow:0 24px 48px rgba(0,0,0,.2)">
+    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem">
+      <div style="width:40px;height:40px;background:var(--gold-faint,rgba(184,137,46,.1));border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3 style="font-family:var(--font-d);font-size:1.2rem;color:var(--ink);margin:0">Datenschutzhinweis</h3>
+    </div>
+    <p style="font-size:.88rem;color:var(--ink-muted);line-height:1.7;margin-bottom:1rem">Bevor Sie uns kontaktieren, bitten wir Sie, unsere Datenschutzerklärung zur Kenntnis zu nehmen:</p>
+    <ul style="font-size:.84rem;color:var(--ink-muted);line-height:1.8;margin:0 0 1rem;padding-left:1.2rem">
+      <li>Ihre Kontaktdaten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet</li>
+      <li>Verantwortlich: John Thyssen, Metzstraße 14, 81667 München</li>
+      <li>Rechtsgrundlage: Art. 6 Abs. 1 lit. b/f DSGVO</li>
+      <li>Keine Weitergabe an Dritte, kein Tracking, keine Cookies</li>
+      <li>Sie können jederzeit Auskunft, Berichtigung oder Löschung verlangen</li>
+    </ul>
+    <p style="font-size:.82rem;margin-bottom:1.5rem"><a href="#" onclick="event.preventDefault();closePrivacyGate();document.getElementById('dse-overlay').style.display='flex'" style="color:var(--pine);text-decoration:underline">Vollständige Datenschutzerklärung lesen</a></p>
+    <div style="display:flex;gap:.75rem">
+      <button onclick="acceptPrivacy()" style="flex:1;background:var(--pine);color:#fff;border:none;padding:.75rem 1.2rem;border-radius:8px;font-weight:600;font-size:.9rem;cursor:pointer;transition:background .2s">Akzeptieren</button>
+      <button onclick="closePrivacyGate()" style="flex:1;background:var(--surface,#f5f2ec);color:var(--ink);border:1.5px solid var(--border-mid,#d5cfc4);padding:.75rem 1.2rem;border-radius:8px;font-weight:600;font-size:.9rem;cursor:pointer;transition:border-color .2s">Abbrechen</button>
+    </div>
+  </div>
+</div>
+            <p style="font-size:.78rem;color:var(--ink-faint);margin-top:1rem">Begrenzt auf wenige Plätze.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-home -->
+
+<!-- ═══════════ PAGE: LEISTUNGEN ═══════════ -->
+<div class="page" id="page-leistungen">
+  <div class="page-hero">
+    <div class="eyebrow" style="justify-content:center">Leistungen</div>
+    <h1>Was wir konkret <em>für Sie tun.</em></h1>
+    <p>Keine Theorie, keine Präsentationen. Wir lösen echte Alltagsprobleme – live eingerichtet, sofort nutzbar.</p>
+  </div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow reveal">Im Detail</div>
+      <h2 class="ttl reveal">Sechs Bereiche. Sofortiger Nutzen.</h2>
+      <div class="l-detail-list reveal">
+        <div class="ld-card"><div class="ld-num">01</div><div class="ld-left"><h3>Angebote &amp; Rechnungen</h3><p>Kundenanfrage kommt rein, Angebot geht in 30 Sekunden raus. Wir bauen individuelle Vorlagen, die Ihr Team täglich nutzen kann – ohne Vorkenntnisse.</p></div><div class="ld-right"><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Angebote in unter 60 Sek.</strong> – egal wie komplex die Anfrage</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Individuelle Prompt-Vorlagen</strong> auf Ihren Betrieb zugeschnitten</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Für alle nutzbar</strong> – kein technisches Vorwissen nötig</p></div><div class="ld-save"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>20 Min. → 30 Sek. pro Angebot</div></div></div>
+        <div class="ld-card"><div class="ld-num">02</div><div class="ld-left"><h3>Google-Bewertungen</h3><p>Viele Betriebe haben dutzende unbeantwortete Rezensionen. KI schreibt glaubwürdige, individuelle Antworten – auf jede einzelne, in Minuten.</p></div><div class="ld-right"><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Individuell, nicht Baukasten</strong> – klingt immer menschlich</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Auch für negative Bewertungen</strong> – deeskalierend formuliert</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Verbessert Google-Ranking</strong> spürbar</p></div><div class="ld-save"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2 Min. pro Bewertung statt gar nicht</div></div></div>
+        <div class="ld-card"><div class="ld-num">03</div><div class="ld-left"><h3>Social Media</h3><p>Foto vom fertigen Projekt – das ist alles. KI liefert Text, Hashtags und Caption, plattform-spezifisch angepasst. Ohne Agentur, ohne Aufwand.</p></div><div class="ld-right"><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Posts in unter 2 Minuten</strong> inkl. Hashtags</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Instagram, Facebook, LinkedIn</strong> – je anders formuliert</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Ihr Stil, Ihre Stimme</strong> – kein generischer Ton</p></div><div class="ld-save"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2+ Stunden pro Woche gespart</div></div></div>
+        <div class="ld-card"><div class="ld-num">04</div><div class="ld-left"><h3>Kundenkommunikation</h3><p>Schwierige Mails, Reklamationen, Anfragen: KI formuliert sachlich, professionell und deeskalierend – ohne Frust, ohne Zeitverlust.</p></div><div class="ld-right"><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Für Reklamationen</strong> – deeskalierend und professionell</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Weniger Stress</strong> – kein emotionaler Kurzschluss mehr</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Für jede Art Kundenmail</strong> geeignet</p></div><div class="ld-save"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>30 Min. pro schwieriger Mail gespart</div></div></div>
+        <div class="ld-card"><div class="ld-num">05</div><div class="ld-left"><h3>Recruiting</h3><p>Aus einem Dreizeiler wird eine Stellenanzeige, die Azubis wirklich anspricht – für jede Plattform individuell formuliert.</p></div><div class="ld-right"><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Indeed, Instagram, Aushang</strong> – alles angepasst</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Zielgruppen-Sprache</strong> – Azubis lesen anders als Fachkräfte</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Mehr Bewerbungen</strong> durch ansprechendere Texte</p></div><div class="ld-save"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Bessere Anzeigen in 10 Min.</div></div></div>
+        <div class="ld-card"><div class="ld-num">06</div><div class="ld-left"><h3>Dokumentation &amp; Protokolle</h3><p>Sprachnachricht ins Handy – KI macht daraus ein sauberes Tagesprotokoll oder Bericht. Kein Abtippen mehr.</p></div><div class="ld-right"><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Sprachaufnahme → Protokoll</strong> vollautomatisch</p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>Für Baustellen, Meetings, Berichte</strong></p></div><div class="ld-point"><div class="ld-ck"><svg width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div><p><strong>In Minuten statt Stunden</strong> – abends einfach fertig</p></div><div class="ld-save"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1–2 Stunden täglich zurückgewonnen</div></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec sec-warm">
+    <div class="wrap">
+      <div class="eyebrow reveal">Branchen</div>
+      <h2 class="ttl reveal">Wo wir den größten Unterschied machen.</h2>
+      <div class="branchen reveal">
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><div class="b-title">Handwerk</div><div class="b-desc">Angebote, Doku, Bewertungen – die drei größten Zeitfresser im Handwerksbetrieb.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><div class="b-title">Immobilien &amp; Hausverwaltung</div><div class="b-desc">Mieterkommunikation, Protokolle, Exposés – in einem Bruchteil der Zeit.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="b-title">Lokale Dienstleister</div><div class="b-desc">Von der Reinigungsfirma bis zur kleinen Agentur – KI entlastet den Büroalltag.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div><div class="b-title">Einzelhandel</div><div class="b-desc">Produktbeschreibungen, Kundenmails, Social Media – ohne Agenturkosten.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.04 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="b-title">Freiberufler</div><div class="b-desc">Angebote, Rechnungen, Kommunikation – professionell ohne Aufwand.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="b-title">Andere Branchen</div><div class="b-desc">Nicht dabei? Sprechen Sie uns an – wir finden heraus, was KI für Sie leisten kann.</div></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec"><div class="wrap"><div class="cta-box reveal"><h2>Welche Leistung passt zu Ihnen?</h2><p>Im kostenlosen Erstgespräch finden wir das gemeinsam heraus.</p><div class="cta-btns"><button class="btn btn-white" onclick="showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Jetzt anfragen</button><button class="btn btn-wline" onclick="showPage('preise')">Preise ansehen</button></div></div></div></section>
+</div>
+
+<!-- ═══════════ PAGE: PREISE ═══════════ -->
+<div class="page" id="page-preise">
+  <div class="page-hero">
+    <div class="eyebrow" style="justify-content:center">Preise</div>
+    <h1>Transparent. <em>Ohne Überraschungen.</em></h1>
+    <p>Kein Abo, keine versteckten Kosten. Das Erstgespräch ist immer kostenlos.</p>
+  </div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="p-grid reveal">
+        <div class="pc" onclick="highlightCard(this)">
+          <p class="pc-tier">Einstieg</p>
+          <p class="pc-price"><sup>€</sup>149</p>
+          <p class="pc-desc">Für Betriebe, die mit einem konkreten Problem starten wollen.</p>
+          <ul class="pc-list"><li>1,5-stündiger Workshop vor Ort</li><li>Bis zu 2 Anwendungsfälle eingerichtet</li><li>Prompt-Vorlagen zum Mitnehmen</li><li>1 Woche Nachbetreuung per Mail</li><li>Checkliste für Ihren Betrieb</li><li>Empfehlungen für nächste Schritte</li></ul>
+          <button class="pc-btn pc-ghost" onclick="event.stopPropagation();showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Jetzt anfragen</button>
+        </div>
+        <div class="pc feat" onclick="highlightCard(this)">
+          <span class="pc-badge">Empfohlen</span>
+          <p class="pc-tier">Partnerschaft</p>
+          <p class="pc-price"><sup>€</sup>249</p>
+          <p class="pc-desc">Für Betriebe, die KI wirklich in den Alltag integrieren wollen.</p>
+          <ul class="pc-list"><li>3-stündiger Workshop vor Ort</li><li>Bis zu 4 Anwendungsfälle eingerichtet</li><li>Individuelle Prompt-Bibliothek</li><li>Kurzanleitungen für Ihr Team</li><li>2 Wochen Begleitung per WhatsApp</li><li>Schulung für bis zu 3 Mitarbeiter</li><li>Dokumentation aller Workflows</li></ul>
+          <button class="pc-btn pc-solid" onclick="event.stopPropagation();showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Jetzt anfragen</button>
+        </div>
+        <div class="pc" onclick="highlightCard(this)">
+          <p class="pc-tier">Langzeit-Partner</p>
+          <p class="pc-price" style="font-size:1.85rem;padding-top:.3rem">Auf Anfrage</p>
+          <p class="pc-desc">Für Betriebe, die dauerhaft begleitet werden wollen.</p>
+          <ul class="pc-list"><li>Alles aus Partnerschaft</li><li>Monatlicher Strategy-Check-in</li><li>Neue KI-Tools erklärt &amp; eingerichtet</li><li>Direkter Draht – jederzeit erreichbar</li><li>Individuell vereinbarte Konditionen</li><li>Quartalsweise Strategie-Review</li><li>Neue Mitarbeiter einschulen</li></ul>
+          <button class="pc-btn pc-ghost" onclick="event.stopPropagation();showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Jetzt anfragen</button>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.5rem;font-size:.77rem;color:var(--ink-faint)">Alle Preise sind Endpreise.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-warm">
+    <div class="wrap">
+      <div class="eyebrow reveal">Was Sie bekommen</div>
+      <h2 class="ttl reveal">Jeder Workshop beinhaltet:</h2>
+      <div class="branchen reveal">
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><div class="b-title">Vor-Ort-Einrichtung</div><div class="b-desc">Wir kommen in Ihren Betrieb und richten alles auf Ihren Geräten ein.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div><div><div class="b-title">Dokumentation</div><div class="b-desc">Kurzanleitungen und Prompt-Vorlagen, die Ihr Team sofort nutzen kann.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3.04 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="b-title">Nachbetreuung</div><div class="b-desc">Wir sind danach nicht weg – per Mail oder WhatsApp erreichbar.</div></div></div>
+        <div class="branche"><div class="b-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="b-title">DSGVO-konform</div><div class="b-desc">Wir erklären genau, welche Daten wohin gehen – bevor wir irgendetwas einrichten.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="faq reveal" style="margin-top:0">
+        <div class="faq-ttl">Häufige Fragen zu unseren Preisen</div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Brauche ich Vorkenntnisse?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Überhaupt nicht. Viele unserer Kunden haben vorher noch nie mit KI-Tools gearbeitet – das ist unser Ausgangspunkt, kein Problem.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Was passiert mit unseren Daten?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Wir nutzen ausschließlich DSGVO-konforme Tools und erklären genau, welche Daten wohin gehen – bevor wir irgendetwas einrichten.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Wie schnell sehen wir erste Ergebnisse?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Noch während des Workshops. Sie sehen sofort, wie eine Aufgabe die vorher 20 Minuten gedauert hat, in 30 Sekunden erledigt ist.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Was kostet das Erstgespräch?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Nichts. Das Erstgespräch ist immer kostenlos und unverbindlich – 30 Minuten, per Telefon oder vor Ort.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Gibt es ein Abo oder laufende Kosten?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Nein. Sie zahlen einmalig für den Workshop. Die Langzeit-Partnerschaft wird individuell vereinbart – aber ohne automatische Verlängerung oder versteckte Kosten.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Welches Modell passt zu mir?<span class="faq-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-inner">Im kostenlosen Erstgespräch finden wir das gemeinsam heraus. Oft reicht der Einstieg, um zu sehen ob KI für Sie funktioniert – upgraden können Sie danach immer.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-warm"><div class="wrap"><div class="cta-box reveal"><h2>Bereit loszulegen?</h2><p>Das Erstgespräch kostet nichts und verpflichtet zu nichts.</p><div class="cta-btns"><button class="btn btn-white" onclick="showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Jetzt anfragen</button><button class="btn btn-wline" onclick="showPage('leistungen')">Leistungen ansehen</button></div></div></div></section>
+</div>
+
+<!-- ═══════════ PAGE: ÜBER UNS ═══════════ -->
+<div class="page" id="page-ueber">
+  <div class="page-hero">
+    <div class="eyebrow" style="justify-content:center">Über uns</div>
+    <h1>Zwei Gründer. <em>Eine Mission.</em></h1>
+    <p>Vekst sind wir – John und Samuel aus München.</p>
+  </div>
+  <section class="sec">
+    <div class="wrap-sm">
+      <div class="team-grid reveal" style="margin-bottom:3rem">
+        <div class="team-card">
+          <div class="team-av"><div class="team-init">JT</div></div>
+          <div class="team-info">
+            <div class="team-name">John Thyssen</div>
+            <div class="team-role">Gründer</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-av"><div class="team-init">SD</div></div>
+          <div class="team-info">
+            <div class="team-name">Samuel Dombrowski</div>
+            <div class="team-role">Gründer</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="background:var(--off);border:1px solid var(--border);border-radius:18px;padding:2.5rem;margin-bottom:2rem">
+        <p style="font-size:.97rem;color:var(--ink-muted);line-height:1.85;margin-bottom:1.1rem">Wir sind zwei Gymnasiasten aus Bayern mit einer gemeinsamen Begeisterung für Künstliche Intelligenz, Automatisierung und digitale Innovationen. Was zunächst als persönliches Interesse begann, entwickelte sich schnell zu dem Ziel, Unternehmen dabei zu unterstützen, moderne KI sinnvoll und praxisnah einzusetzen.</p>
+        <p style="font-size:.97rem;color:var(--ink-muted);line-height:1.85;margin-bottom:1.1rem">Mit unserem Unternehmen möchten wir zeigen, dass Künstliche Intelligenz nicht kompliziert sein muss. Unser Fokus liegt darauf, bestehende Arbeitsabläufe zu analysieren, wiederkehrende Aufgaben zu automatisieren und individuelle Lösungen zu entwickeln, die Unternehmen spürbar Zeit sparen und ihre Prozesse effizienter gestalten.</p>
+        <p style="font-size:.97rem;color:var(--ink-muted);line-height:1.85;margin-bottom:1.1rem">Dabei legen wir besonderen Wert auf eine persönliche Zusammenarbeit. Statt Standardlösungen zu verkaufen, möchten wir die Herausforderungen unserer Kunden verstehen und gemeinsam eine Lösung entwickeln, die wirklich zu ihrem Unternehmen passt.</p>
+        <p style="font-size:.97rem;color:var(--ink-muted);line-height:1.85">Für uns ist KI kein Selbstzweck, sondern ein Werkzeug, das Menschen entlasten und Unternehmen dabei helfen soll, sich auf das Wesentliche zu konzentrieren.</p>
+      </div>
+      <div class="reveal" style="background:var(--off);border:1px solid var(--border);border-radius:18px;padding:2.5rem">
+        <div class="eyebrow" style="margin-bottom:.75rem">Warum Vekst</div>
+        <p style="font-size:.97rem;color:var(--ink-muted);line-height:1.85">Der Name <strong style="color:var(--ink)">Vekst</strong> kommt aus dem Norwegischen und bedeutet <strong style="color:var(--ink)">Wachstum</strong> – genau das, was wir für unsere Kunden wollen.</p>
+      </div>
+    </div>
+  </section>
+  <section class="sec sec-warm"><div class="wrap"><div class="cta-box reveal"><h2>Lassen Sie uns reden.</h2><p>Das Erstgespräch kostet nichts und verpflichtet zu nichts.</p><div class="cta-btns"><button class="btn btn-white" onclick="showPage('home');setTimeout(()=>document.getElementById('kontakt').scrollIntoView({behavior:'smooth'}),80)">Jetzt anfragen</button><button class="btn btn-wline" onclick="showPage('leistungen')">Leistungen ansehen</button></div></div></div></section>
+</div>
+
+<!-- IMPRESSUM MODAL -->
+<div id="imp-overlay" onclick="closeImp(event)">
+  <div class="imp-box">
+    <button class="imp-close" onclick="document.getElementById('imp-overlay').style.display='none'">×</button>
+    <div class="eyebrow" style="margin-bottom:.75rem">Impressum</div>
+    <h2 style="font-family:var(--font-d);font-size:1.6rem;color:var(--ink);letter-spacing:-.02em;margin-bottom:1.75rem;line-height:1.1">Angaben gemäß § 5 TMG</h2>
+    <div class="imp-section"><div class="imp-section-label">Inhaber</div><p>John Thyssen &amp; Samuel Dombrowski</p></div>
+    <div class="imp-section"><div class="imp-section-label">Anschrift</div><p>Vekst<br>Metzstraße 14<br>81667 München</p></div>
+    <div class="imp-section"><div class="imp-section-label">Kontakt</div><p>Telefon: <a href="tel:+4915120271857">+49 151 20271857</a> (John)<br>Telefon: <a href="tel:+4917684919186">+49 176 84919186</a> (Samuel)<br>E-Mail: <a href="mailto:info@get-vekst.de">info@get-vekst.de</a></p></div>
+    <div class="imp-section"><div class="imp-section-label">Umsatzsteuer</div><p>Kleinunternehmer gemäß § 19 UStG. Es wird keine Umsatzsteuer erhoben und daher auch keine Umsatzsteuer-Identifikationsnummer ausgewiesen.</p></div>
+    <div class="imp-section"><p style="font-size:.82rem;color:var(--ink-faint);line-height:1.7">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: John Thyssen und Samuel Dombrowski, Metzstraße 14, 81667 München.</p></div>
+  </div>
+</div>
+
+<!-- DATENSCHUTZERKLÄRUNG MODAL -->
+<div id="dse-overlay" style="display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:2rem" onclick="if(event.target===this)this.style.display='none'">
+  <div class="imp-box" style="max-width:620px">
+    <button class="imp-close" onclick="document.getElementById('dse-overlay').style.display='none'">×</button>
+    <div class="eyebrow" style="margin-bottom:.75rem">Datenschutz</div>
+    <h2 style="font-family:var(--font-d);font-size:1.6rem;color:var(--ink);letter-spacing:-.02em;margin-bottom:1.75rem;line-height:1.1">Datenschutzerklärung</h2>
+
+    <div class="imp-section">
+      <div class="imp-section-label">1. Verantwortlicher</div>
+      <p>John Thyssen &amp; Samuel Dombrowski (gemeinsam verantwortlich)<br>Metzstraße 14, 81667 München<br>E-Mail: <a href="mailto:info@get-vekst.de">info@get-vekst.de</a><br>Telefon: <a href="tel:+4915120271857">+49 151 20271857</a> (John) / <a href="tel:+4917684919186">+49 176 84919186</a> (Samuel)</p>
+      <p style="margin-top:.5rem">Ansprechpartner für Datenschutzanfragen: John Thyssen, erreichbar unter den oben genannten Kontaktdaten.</p>
+    </div>
+
+    <div class="imp-section">
+      <div class="imp-section-label">2. Erhebung und Speicherung personenbezogener Daten</div>
+      <p>Beim Besuch dieser Website werden automatisch Informationen durch den Hosting-Anbieter Netlify, Inc. (USA) erfasst (sog. Server-Logfiles): Browsertyp und -version, Betriebssystem, Referrer-URL, IP-Adresse (anonymisiert), Uhrzeit der Serveranfrage. Diese Daten sind nicht bestimmten Personen zuordenbar. Grundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren Bereitstellung der Website). Die Datenübermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Frameworks (Art. 45 DSGVO).</p>
+    </div>
+
+    <div class="imp-section">
+      <div class="imp-section-label">3. Kontaktaufnahme per E-Mail oder Telefon</div>
+      <p>Wenn Sie uns per E-Mail oder Telefon kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert. Grundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen). Ihre Daten werden nicht an Dritte weitergegeben und gelöscht, sobald sie für den Zweck der Erhebung nicht mehr erforderlich sind.</p>
+    </div>
+
+    <div class="imp-section">
+      <div class="imp-section-label">4. Schriftarten</div>
+      <p>Diese Website nutzt die Schriftarten Inter und Fraunces. Die Schriftarten werden lokal von unserem Server geladen – es findet keine Verbindung zu Google-Servern oder anderen Drittanbietern statt. Es werden dabei keine personenbezogenen Daten übermittelt.</p>
+    </div>
+
+    <div class="imp-section">
+      <div class="imp-section-label">5. Cookies und Tracking</div>
+      <p>Diese Website verwendet keine Cookies, keine Tracking-Tools und kein Analytics. Es findet keine Auswertung Ihres Nutzungsverhaltens statt.</p>
+    </div>
+
+    <div class="imp-section">
+      <div class="imp-section-label">6. Ihre Rechte</div>
+      <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) und Widerspruch (Art. 21 DSGVO). Zur Ausübung Ihrer Rechte wenden Sie sich an den oben genannten Ansprechpartner. Beschwerden können an die zuständige Aufsichtsbehörde gerichtet werden: Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach.</p>
+    </div>
+
+    <div class="imp-section">
+      <div class="imp-section-label">7. Widerrufsbelehrung</div>
+      <p>Sofern Sie als Verbraucher eine Dienstleistung beauftragen, steht Ihnen ein Widerrufsrecht gemäß § 312g BGB zu. Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses. Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Vekst, Metzstraße 14, 81667 München, info@get-vekst.de, +49 151 20271857) mittels einer eindeutigen Erklärung (z.&nbsp;B. per E-Mail oder Post) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+    </div>
+
+    <div class="imp-section" style="padding-top:1rem;border-top:1px solid var(--border)">
+      <p style="font-size:.82rem;color:var(--ink-faint);line-height:1.7">Stand: August 2026</p>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="fi">
+    <div class="fl" onclick="showPage('home')">Vekst <span class="fl-dot"></span></div>
+    <div class="flinks">
+      <a onclick="showPage('ueber')">Über uns</a>
+      <a onclick="showPage('leistungen')">Leistungen</a>
+      <a onclick="showPage('preise')">Preise</a>
+      <a onclick="document.getElementById('imp-overlay').style.display='flex'">Impressum</a>
+      <a onclick="document.getElementById('dse-overlay').style.display='flex'">Datenschutz</a>
+      <a href="mailto:info@get-vekst.de">info@get-vekst.de</a>
+    </div>
+    <span class="fcopy">© 2026 Vekst</span>
+  </div>
+</footer>
+
+<script>
+/* ── MOBILE MENU ── */
+function toggleMobileMenu(){
+  const menu=document.getElementById('mobile-menu')
+  const btn=document.querySelector('.hamburger')
+  const isOpen=menu.classList.contains('open')
+  menu.classList.toggle('open')
+  btn.classList.toggle('open')
+  btn.setAttribute('aria-label',isOpen?'Menü öffnen':'Menü schließen')
+  document.body.style.overflow=isOpen?'':'hidden'
+}
+function closeMobileMenu(){
+  const menu=document.getElementById('mobile-menu')
+  const btn=document.querySelector('.hamburger')
+  menu.classList.remove('open')
+  btn.classList.remove('open')
+  btn.setAttribute('aria-label','Menü öffnen')
+  document.body.style.overflow=''
+}
+
+const tabData=[
+  {title:'Angebote &amp; Rechnungen',desc:'Ihre Kunden schicken eine Anfrage – in 30 Sekunden haben Sie ein professionelles Angebot. Wir richten Vorlagen live an Ihrem Laptop ein.',save:'20 Min. → 30 Sek.',icon:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>'},
+  {title:'Google-Bewertungen',desc:'Dutzende unbeantwortete Rezensionen? KI schreibt glaubwürdige, individuelle Antworten – in zwei Minuten statt gar nicht.',save:'0 → alle beantwortet',icon:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>'},
+  {title:'Social Media',desc:'Foto vom fertigen Projekt plus ein Prompt: fertiger Post mit Text und Hashtags, angepasst an jede Plattform.',save:'2 Std./Woche gespart',icon:'<rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-linecap="round" stroke-width="2.5"/>'},
+  {title:'Kundenkommunikation',desc:'Schwierige Mails, Reklamationen: KI formuliert sachlich und professionell – ohne Frust, ohne Zeitverlust.',save:'Weniger Stress täglich',icon:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>'},
+  {title:'Recruiting',desc:'Aus einem Dreizeiler wird eine Anzeige, die Azubis wirklich anspricht – für jede Plattform individuell angepasst.',save:'Mehr &amp; bessere Bewerbungen',icon:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>'},
+  {title:'Dokumentation &amp; Protokolle',desc:'Sprachnachricht ins Handy sprechen – KI macht daraus ein sauberes Protokoll. Kein Abtippen mehr nach Feierabend.',save:'1–2 Std. täglich gespart',icon:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/>'},
+]
+
+document.querySelectorAll('.l-tab').forEach((tab,i)=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.l-tab').forEach(t=>t.classList.remove('active'))
+    tab.classList.add('active')
+    const card=document.getElementById('lcard')
+    card.classList.remove('vis')
+    setTimeout(()=>{
+      document.getElementById('lc-title').innerHTML=tabData[i].title
+      document.getElementById('lc-desc').textContent=tabData[i].desc.replace(/&amp;/g,'&')
+      document.getElementById('lc-save').innerHTML=tabData[i].save
+      document.getElementById('lc-icon').innerHTML=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">${tabData[i].icon}</svg>`
+      card.classList.add('vis')
+    },200)
+  })
+})
+
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'))
+  document.getElementById('page-'+id).classList.add('active')
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'))
+  const navEl=document.getElementById('nav-'+id)
+  if(navEl)navEl.classList.add('active')
+  window.scrollTo({top:0,behavior:'smooth'})
+  // Re-trigger reveal animations for the new page
+  setTimeout(()=>{
+    document.querySelectorAll('#page-'+id+' .reveal, #page-'+id+' .reveal-l, #page-'+id+' .reveal-r').forEach(el=>{
+      el.classList.remove('in')
+      ro.observe(el)
+    })
+  },50)
+}
+
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item')
+  const isOpen=item.classList.contains('open')
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'))
+  if(!isOpen)item.classList.add('open')
+}
+
+function toggleExtra(btn){
+  const list=btn.nextElementSibling
+  list.classList.toggle('open')
+}
+
+function closeImp(e){if(e.target===document.getElementById('imp-overlay'))document.getElementById('imp-overlay').style.display='none'}
+
+function highlightCard(el){
+  document.querySelectorAll('.pc').forEach(c=>c.classList.remove('highlighted'))
+  el.classList.add('highlighted')
+}
+
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>20))
+
+const ro=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('in');ro.unobserve(el.target)}})},{threshold:.1})
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>ro.observe(el))
+
+// Close mobile menu on outside click
+document.addEventListener('click',e=>{
+  const menu=document.getElementById('mobile-menu')
+  const btn=document.querySelector('.hamburger')
+  if(menu.classList.contains('open')&&!menu.contains(e.target)&&!btn.contains(e.target)){closeMobileMenu()}
+})
+// Close mobile menu on escape key
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMobileMenu();closePrivacyGate()}})
+
+// Privacy consent gate
+let privacyAccepted=false
+let pendingContactLink=null
+function handleContactClick(e){
+  if(privacyAccepted)return true
+  e.preventDefault()
+  const link=e.currentTarget
+  pendingContactLink={href:link.href,target:link.getAttribute('target')}
+  document.getElementById('privacy-gate').style.display='flex'
+  return false
+}
+function acceptPrivacy(){
+  privacyAccepted=true
+  closePrivacyGate()
+  if(pendingContactLink){
+    if(pendingContactLink.target==='_blank'){window.open(pendingContactLink.href,'_blank')}
+    else{window.location.href=pendingContactLink.href}
+    pendingContactLink=null
+  }
+}
+function closePrivacyGate(){document.getElementById('privacy-gate').style.display='none';pendingContactLink=null}
+</script>
+</body>
+</html>
