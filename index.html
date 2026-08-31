@@ -99,7 +99,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--font-b);color:var(--ink);background:var(--surface);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;padding:0 max(env(safe-area-inset-left,0px),3rem);display:flex;align-items:center;justify-content:space-between;transition:background .3s,box-shadow .3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:300;height:76px;padding:0 max(env(safe-area-inset-left,0px),3rem);display:flex;align-items:center;justify-content:space-between;transition:background .3s,box-shadow .3s}
 nav.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
 .logo{font-family:var(--font-d);font-size:2.4rem;color:var(--pine);text-decoration:none;display:flex;align-items:center;gap:5px;letter-spacing:-.02em;cursor:pointer}
 .logo-dot{width:7px;height:7px;background:var(--gold);border-radius:50%}
@@ -505,12 +505,16 @@ footer{background:var(--ink);padding:3rem;padding-bottom:calc(3rem + env(safe-ar
 :focus-visible{outline:2px solid var(--pine);outline-offset:2px;border-radius:4px}
 button:focus:not(:focus-visible),a:focus:not(:focus-visible){outline:none}
 </style>
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="512x512" href="./favicon-512.png">
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="nav">
-  <div class="logo" onclick="showPage('home')">Vekst <span class="logo-dot"></span></div>
+  <div class="logo" onclick="showPage('home')" style="cursor:pointer;display:flex;align-items:center">
+    <img src="./get-vekst-logo.png" alt="get-vekst Logo" style="height:58px;width:auto">
+  </div>
   <ul class="nav-links">
     <li><a onclick="showPage('home')" id="nav-home" class="active">Start</a></li>
     <li><a onclick="showPage('leistungen')" id="nav-leistungen">Leistungen</a></li>
@@ -977,7 +981,17 @@ button:focus:not(:focus-visible),a:focus:not(:focus-visible){outline:none}
 </div>
 <footer>
   <div class="fi">
-    <div class="fl" onclick="showPage('home')">Vekst <span class="fl-dot"></span></div>
+    <div class="fl" onclick="showPage('home')" style="cursor:pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 160" style="height:30px;width:auto;filter:brightness(0) invert(1)">
+        <g transform="translate(0, -10) scale(0.82)">
+          <path d="M 22,175 C 22,175 12,85 68,18 C 90,-4 115,-2 115,-2 C 115,-2 102,65 68,108 C 46,136 22,175 22,175 Z" fill="white"/>
+          <path d="M 40,183 C 40,183 48,98 105,45 C 123,28 148,20 148,20 C 148,20 125,82 96,122 C 74,150 40,183 40,183 Z" fill="white"/>
+          <path d="M 60,190 C 60,190 80,108 134,68 C 152,55 178,47 178,47 C 178,47 150,105 120,140 C 98,165 60,190 60,190 Z" fill="white"/>
+          <path d="M 82,195 C 82,195 110,118 162,84 C 180,72 206,68 206,68 C 206,68 176,120 146,152 C 124,175 82,195 82,195 Z" fill="white"/>
+        </g>
+        <text x="185" y="100" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="72" fill="white" letter-spacing="-1.5">get-vekst</text>
+      </svg>
+    </div>
     <div class="flinks">
       <a onclick="showPage('ueber')">Über uns</a>
       <a onclick="showPage('leistungen')">Leistungen</a>
